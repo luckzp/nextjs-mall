@@ -1,12 +1,22 @@
 import React from "react";
 import MainLeftHeader from "./mainLeftHeader";
 import MainRightHeader from "./mainRightHeader";
+import MainRecommend from "./mainRecommend";
 export default function main() {
   return (
     <div className="w-[982px] min-h-[700px] mx-auto flex border-x border-[#d3d3d3]">
       <div className="w-[730px] p-[20px]">
         <MainLeftHeader />
-        main-left
+        <div className="flex flex-wrap justify-between gap-10 mt-5">
+          <MainRecommend />
+          <MainRecommend />
+          <MainRecommend />
+          <MainRecommend />
+          <MainRecommend />
+          <MainRecommend />
+          <MainRecommend />
+          <MainRecommend />
+        </div>
       </div>
 
       <div className="w-[252px] border-l border-[#d3d3d3]">
