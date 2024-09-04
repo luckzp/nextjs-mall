@@ -12,10 +12,10 @@ export default function mainRecommend() {
         </div>
         <div className="absolute bottom-[5px] right-[10px] bg-[url('/iconall.png')] w-[16px] h-[17px] z-5"></div>
       </div>
-      <div className="mt-1 text-[14px]">
+      <a className="block mt-1 text-[14px] hover:underline">
         <span className="inline-block relative top-[3px]  w-[35px] h-[15px] bg-[url('/icon.png')] bg-[-31px_-658px] mr-1"></span>
         <span>古典清香 I 我的茶馆里住着巴赫与肖邦</span>
-      </div>
+      </a>
     </div>
   );
 }

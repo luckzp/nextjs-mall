@@ -2,20 +2,32 @@ import React from "react";
 import MainLeftHeader from "./mainLeftHeader";
 import MainRightHeader from "./mainRightHeader";
 import MainRecommend from "./mainRecommend";
+import MainAlbum from "./mainAlbum";
 export default function main() {
   return (
     <div className="w-[982px] min-h-[700px] mx-auto flex border-x border-[#d3d3d3]">
-      <div className="w-[730px] p-[20px]">
-        <MainLeftHeader />
-        <div className="flex flex-wrap justify-between gap-10 mt-5">
-          <MainRecommend />
-          <MainRecommend />
-          <MainRecommend />
-          <MainRecommend />
-          <MainRecommend />
-          <MainRecommend />
-          <MainRecommend />
-          <MainRecommend />
+      <div className="w-[730px] p-[20px] bg-white">
+        <div className="mt-2">
+          <MainLeftHeader leftText="热门推荐" hasCategorys={true} />
+          <div className="flex flex-wrap justify-between gap-10">
+            <MainRecommend />
+            <MainRecommend />
+            <MainRecommend />
+            <MainRecommend />
+            <MainRecommend />
+            <MainRecommend />
+            <MainRecommend />
+            <MainRecommend />
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <MainLeftHeader leftText="新碟上架" />
+          <div className="w-[687px] h-[186px] bg-[#f5f5f5] border-[1px] border-solid border-[#d3d3d3] mt-5 relative">
+            <MainAlbum />
+            <div className="bg-[url('/index.png')] bg-[-260px_-75px] absolute top-[71px] w-[17px] h-[17px] "></div>
+            <div className="bg-[url('/index.png')] bg-[-300px_-75px] absolute right-0 top-[71px] w-[17px] h-[17px] "></div>
+          </div>
         </div>
       </div>
 
