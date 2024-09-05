@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import MainLeftHeader from "./mainLeftHeader";
 import MainRightHeader from "./mainRightHeader";
 import MainRecommend from "./mainRecommend";
 import MainAlbum from "./mainAlbum";
+import MainRank from "./mainRank";
 export default function main() {
+  const [currentAlbumIndex, setCurrentAlbumIndex] = useState(0);
+  const totalAlbums = 3; // Adjust this based on the number of albums you have
+
+  const nextAlbum = () => {
+    setCurrentAlbumIndex((prevIndex: number) => (prevIndex + 1) % totalAlbums);
+  };
+
+  const prevAlbum = () => {
+    setCurrentAlbumIndex(
+      (prevIndex: number) => (prevIndex - 1 + totalAlbums) % totalAlbums
+    );
+  };
+
   return (
     <div className="w-[982px] min-h-[700px] mx-auto flex border-x border-[#d3d3d3]">
       <div className="w-[730px] p-[20px] bg-white">
@@ -23,10 +37,35 @@ export default function main() {
 
         <div className="mt-12">
           <MainLeftHeader leftText="新碟上架" />
-          <div className="w-[687px] h-[186px] bg-[#f5f5f5] border-[1px] border-solid border-[#d3d3d3] mt-5 relative">
-            <MainAlbum />
-            <div className="bg-[url('/index.png')] bg-[-260px_-75px] absolute top-[71px] w-[17px] h-[17px] "></div>
-            <div className="bg-[url('/index.png')] bg-[-300px_-75px] absolute right-0 top-[71px] w-[17px] h-[17px] "></div>
+          <div className="w-[687px] h-[186px] overflow-hidden bg-[#f5f5f5] border-[1px] border-solid border-[#d3d3d3] mt-5 relative">
+            <div
+              className="flex transition-transform duration-300 ease-in-out"
+              style={{ transform: `translateX(-${currentAlbumIndex * 100}%)` }}
+            >
+              <MainAlbum />
+
+              <MainAlbum />
+
+              <MainAlbum />
+            </div>
+            <a
+              className="bg-[url('/index.png')] bg-[-260px_-75px] absolute top-[71px] w-[17px] h-[17px] "
+              onClick={prevAlbum}
+            ></a>
+            <a
+              className="bg-[url('/index.png')] bg-[-300px_-75px] absolute right-0 top-[71px] w-[17px] h-[17px] "
+              onClick={nextAlbum}
+            ></a>
+          </div>
+        </div>
+        <div className="mt-9">
+          <MainLeftHeader leftText="榜单" />
+          <div className="w-[687px] h-[472px] overflow-hidden bg-[#f5f5f5] border-[1px] border-solid border-[#d3d3d3] mt-5 ">
+            <div className="h-full border-[1px] border-solid border-white flex">
+              <MainRank />
+              <MainRank />
+              <MainRank />
+            </div>
           </div>
         </div>
       </div>
