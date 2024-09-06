@@ -88,7 +88,7 @@ export default function main() {
           <ul>
             <li>
               <a className=" w-[210px] h-[62px] flex mt-3 ">
-                <img className="block" src="/109951168490195225.jpg" alt="" />
+                <img className="block" src="/AMEI.jpg" alt="" />
                 <div className=" flex-1 pl-[14px] py-1 flex flex-col justify-around border-[1px] border-l-0  border-solid border-[#e9e9e9] bg-[#fafafa]">
                   <div className="text-[14px] font-bold">张惠妹</div>
                   <div className="text-[12px] text-[#666]">台湾歌手张惠妹</div>
@@ -97,7 +97,7 @@ export default function main() {
             </li>
             <li>
               <a className=" w-[210px] h-[62px] flex mt-3 ">
-                <img className="block" src="/109951168490195225.jpg" alt="" />
+                <img className="block" src="/AMEI.jpg" alt="" />
                 <div className=" flex-1 pl-[14px] py-1 flex flex-col justify-around border-[1px] border-l-0  border-solid border-[#e9e9e9] bg-[#fafafa]">
                   <div className="text-[14px] font-bold">张惠妹</div>
                   <div className="text-[12px] text-[#666]">台湾歌手张惠妹</div>
@@ -106,7 +106,7 @@ export default function main() {
             </li>
             <li>
               <a className=" w-[210px] h-[62px] flex mt-3 ">
-                <img className="block" src="/109951168490195225.jpg" alt="" />
+                <img className="block" src="/AMEI.jpg" alt="" />
                 <div className=" flex-1 pl-[14px] py-1 flex flex-col justify-around border-[1px] border-l-0  border-solid border-[#e9e9e9] bg-[#fafafa]">
                   <div className="text-[14px] font-bold">张惠妹</div>
                   <div className="text-[12px] text-[#666]">台湾歌手张惠妹</div>
@@ -115,7 +115,7 @@ export default function main() {
             </li>
             <li>
               <a className=" w-[210px] h-[62px] flex mt-3 ">
-                <img className="block" src="/109951168490195225.jpg" alt="" />
+                <img className="block" src="/AMEI.jpg" alt="" />
                 <div className=" flex-1 pl-[14px] py-1 flex flex-col justify-around border-[1px] border-l-0  border-solid border-[#e9e9e9] bg-[#fafafa]">
                   <div className="text-[14px] font-bold">张惠妹</div>
                   <div className="text-[12px] text-[#666]">台湾歌手张惠妹</div>
@@ -124,7 +124,7 @@ export default function main() {
             </li>
             <li>
               <a className=" w-[210px] h-[62px] flex mt-3 ">
-                <img className="block" src="/109951168490195225.jpg" alt="" />
+                <img className="block" src="/AMEI.jpg" alt="" />
                 <div className=" flex-1 pl-[14px] py-1 flex flex-col justify-around border-[1px] border-l-0  border-solid border-[#e9e9e9] bg-[#fafafa]">
                   <div className="text-[14px] font-bold">张惠妹</div>
                   <div className="text-[12px] text-[#666]">台湾歌手张惠妹</div>
@@ -140,7 +140,7 @@ export default function main() {
           <ul>
             <li>
               <a className=" w-[210px] h-[62px] flex mt-3 ">
-                <img className="block" src="/109951168490195225.jpg" alt="" />
+                <img className="block" src="/AMEI.jpg" alt="" />
                 <div className=" flex-1 pl-[14px] py-1 flex flex-col justify-around ">
                   <div className=" font-bold">张惠妹</div>
                   <div className="text-[12px] text-[#666]">台湾歌手张惠妹</div>
@@ -149,7 +149,7 @@ export default function main() {
             </li>
             <li>
               <a className=" w-[210px] h-[62px] flex mt-3 ">
-                <img className="block" src="/109951168490195225.jpg" alt="" />
+                <img className="block" src="/AMEI.jpg" alt="" />
                 <div className=" flex-1 pl-[14px] py-1 flex flex-col justify-around ">
                   <div className=" font-bold">张惠妹</div>
                   <div className="text-[12px] text-[#666]">台湾歌手张惠妹</div>
@@ -159,7 +159,7 @@ export default function main() {
 
             <li>
               <a className=" w-[210px] h-[62px] flex mt-3 ">
-                <img className="block" src="/109951168490195225.jpg" alt="" />
+                <img className="block" src="/AMEI.jpg" alt="" />
                 <div className=" flex-1 pl-[14px] py-1 flex flex-col justify-around ">
                   <div className=" font-bold">张惠妹</div>
                   <div className="text-[12px] text-[#666]">台湾歌手张惠妹</div>

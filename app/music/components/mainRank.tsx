@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function mainRank() {
+  const [isFocused, setIsFocused] = useState(false);
+
   return (
     <div className="w-[230px] box-border border-r-[1px] border-solid border-[#d3d3d3] h-full ">
       <div className="m-4 flex">
@@ -18,11 +20,23 @@ export default function mainRank() {
       </div>
       <ul>
         <li className="bg-[#e8e8e8] h-[32px] leading-[32px]">
-          <div className="ml-5">
+          <div
+            className="ml-5 flex"
+            onMouseEnter={() => setIsFocused(true)}
+            onMouseLeave={() => setIsFocused(false)}
+          >
             <span className="text-[16px] mr-3 text-red-600">1</span>
-            <a href="" className="align-top">
-              城北的花
-            </a>
+            <div className="flex w-full">
+              <a
+                href=""
+                className="align-top flex-1 whitespace-nowrap overflow-hidden text-ellipsis"
+              >
+                城北的花
+              </a>
+              {isFocused && (
+                <a className="w-[17px] h-[17px] mr-[30px] mt-[8px] bg-[-267px_-268px] bg-[url('/index.png')] "></a>
+              )}
+            </div>
           </div>
         </li>
         <li className="h-[32px] leading-[32px]">

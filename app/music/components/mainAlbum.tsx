@@ -5,7 +5,7 @@ export default function mainAlbum() {
   return (
     <div className="flex justify-between gap-3 py-8 px-6">
       {[...Array(5)].map((_, index) => (
-        <div className="h-[150px]">
+        <div className="h-[150px]" key={index}>
           <a
             className="block w-[118px] h-[100px] shadow-[0px_3px_3px_gray] relative hover:cursor-pointer"
             onMouseEnter={() => setSelectIndex(index)}
