@@ -1,11 +1,17 @@
 "use client";
 import React, { useState } from "react";
+import { incremented } from "@/lib/featutres/counter/counterSlice";
+import { useAppSelector, useAppDispatch } from "@/lib/hook";
+import { Button } from "antd";
 
 export default function Hello() {
   const [selectedTab, setSelectedTab] = useState("热门");
-
+  const counterState = useAppSelector((state) => state.counter.value);
   const tabs = ["热门", "穿戴"];
-
+  const dispatch = useAppDispatch();
+  const increase = () => {
+    dispatch(incremented());
+  };
   return (
     <div className="w-[1226px] mx-auto ">
       <div className="flex justify-between h-[58px] leading-[58px] bg-orange-400">
@@ -25,6 +31,9 @@ export default function Hello() {
             </span>
           ))}
         </div>
+      </div>
+      <div>
+        {counterState} <Button onClick={increase}>change</Button>
       </div>
       <div
         className="w-full my-6 grid grid-cols-5 grid-rows-4  gap-1 "
