@@ -7,7 +7,7 @@ import SiteSearch from "./components/siteSearch";
 import SiteFooter from "./components/siteFooter";
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#f6f6f6]">
       <SiteNavigation />
 
       <SiteSearch />

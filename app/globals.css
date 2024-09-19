@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 body{
-    background: #f6f6f6;
-    font-family: tahoma, arial, Microsoft YaHei, sans-serif;
-    font-size: 12px;
+    /* background: #f6f6f6;  */
 }
 
